@@ -6,7 +6,11 @@ int main (){
     int suma (int n, int matriz[n][100]);
 
     int suma (int n, int matriz[n][100]){
-        
+        int sumatoria = 0;
+        for (int i = 0; i < n; i++){
+            sumatoria += matriz[i][n - i - 1];
+        }
+        return sumatoria;
     }
 
 
