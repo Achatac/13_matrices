@@ -22,8 +22,13 @@ void generaMatriz (int n){
             }
         }
     }
-
-
+    
+    cout << "La matriz (" << fil << " x " << colum << ") es: " << endl;
+    for (int i = 0; i < fil; i ++ ){
+        for (int j = 0; j < colum; j++){
+            cout << matriz[i][j] << " ";
+        }
+    } 
 
 
 }
@@ -32,7 +37,7 @@ int main (){
 
     int n;
     cout << "Ingrese el valor de 'n' para generar una matriz de orden (n x 3n): "; cin >> n;
-
+    generaMatriz (n);
 
     return 0;
 }
