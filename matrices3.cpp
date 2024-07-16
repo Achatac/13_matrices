@@ -17,7 +17,7 @@ void generaMatriz (int n){
 
     for (int i = 0; i < fil; i++){
         for (int j = 0; j < colum; j++){
-            if (i == 0 || i == j - 1 || j == 0 || j == i - 1){
+            if (i == 0 || i == fil - 1 || j == 0 || j == colum - 1){
                 matriz[i][j] = 1;
             }
         }
@@ -28,6 +28,7 @@ void generaMatriz (int n){
         for (int j = 0; j < colum; j++){
             cout << matriz[i][j] << " ";
         }
+        cout << endl;
     } 
 
 
