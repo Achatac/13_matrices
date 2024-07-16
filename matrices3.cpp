@@ -15,6 +15,14 @@ void generaMatriz (int n){
         }
     }
 
+    for (int i = 0; i < fil; i++){
+        for (int j = 0; j < colum; j++){
+            if (i == 0 || i == j - 1 || j == 0 || j == i - 1){
+                matriz[i][j] = 1;
+            }
+        }
+    }
+
 
 
 
